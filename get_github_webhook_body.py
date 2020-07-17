@@ -21,4 +21,24 @@ def get_github_body_str(payload):
         if payload.get('login'):
             result += "By: " + payload['sender']['login']
             result += "\n"
+
+    # Add Commit Message:
+    if payload.get('commits'):
+        commits = payload['commits']
+        if type(commits) == list:
+            for commit in commits:
+                commit_message = commit.get('message')
+                commit_author = commit.get('committer', dict())
+                commit_author_name = commit_author.get('name')
+                commit_author_username = commit_author.get('username')
+                commit_url = commit.get('url')
+                if commit_message and commit_author_name and commit_author_username and commit_url:
+                    result += "New Commit: " + commit_message + "\n\tBy: " + commit_author_name \
+                              + ", " + commit_author_username + "\n\tAt: " + commit_url
+                elif commit_url:
+                    result += "New Commit: " + commit_url
+                else:
+                    result += "New Commit"
+                result += "\n"
+
     return result
