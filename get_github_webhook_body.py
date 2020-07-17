@@ -1,4 +1,4 @@
-def get_github_body_str(payload):
+def get_github_webhook_body(payload):
     result = ""
     if payload.get('action'):
         result += 'Action: ' + str(payload['action']) + "\n"
