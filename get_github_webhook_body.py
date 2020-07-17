@@ -14,8 +14,9 @@ def get_github_body_str(payload):
         if issue_sender:
             result += "Issue Submitted By: " + str(issue_sender) + '\n'
     if payload.get('repository'):
-        if payload.get('name'):
-            result += 'Repository ' + str(payload['repository']['name']) + '\n'
+        repository = payload['repository']
+        if repository.get('name'):
+            result += 'Repository ' + str(repository['name']) + '\n'
     if payload.get('sender'):
         if payload.get('login'):
             result += "By: " + payload['sender']['login']
