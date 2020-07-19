@@ -1,6 +1,6 @@
 # GitHub Webhook Body
 
-You can integrate the <a href="https://api.spontit.com">Spontit API</a> with GitHub webhooks. For a video on how to do so, see <a href="todo">here</a>.
+You can integrate the <a href="https://api.spontit.com">Spontit API</a> with GitHub webhooks. For a video on how to do so, see <a href="https://youtu.be/nNa07pnQndM">here</a>.
 
 To set up GitHub push notifications, see the steps below.
 
@@ -22,4 +22,4 @@ To set up GitHub push notifications, see the steps below.
 8) Enable SSL, select "Just the push event", check "Active", and click "Update Webhook". You should immediately get a notification on your devices. Sometimes Android phones might take a few minutes.
 9) Invite others to your channel and to Spontit using the link in step #4!
 
-If you have any trouble, please do not hesitate to reach out at info@spontit.com. We highly recommend watching the video tutorial <a href="todo">here</a>.
+If you have any trouble, please do not hesitate to reach out at info@spontit.com. We highly recommend watching the video tutorial <a href="https://youtu.be/nNa07pnQndM">here</a>.
