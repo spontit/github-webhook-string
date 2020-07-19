@@ -1,8 +1,10 @@
-# GitHub Webhook Body
+# GitHub Webhook Body and How to Set Up GitHub Push Notifications
 
-You can integrate the <a href="https://api.spontit.com">Spontit API</a> with GitHub webhooks. For a video on how to do so, see <a href="https://youtu.be/nNa07pnQndM">here</a>.
+You can integrate the <a href="https://api.spontit.com">Spontit API</a> with GitHub webhooks to send push notifications when an update to the repository is made. 
 
-To set up GitHub push notifications, see the steps below.
+For a video on how to do so, see <a href="https://youtu.be/nNa07pnQndM">here</a>.
+
+For instructions on how to do so, see the steps below.
 
 We use the function in `get_github_webhook_body.py` on our server to generate the body of the notification. 
 
